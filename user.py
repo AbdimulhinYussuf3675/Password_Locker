@@ -15,6 +15,5 @@ class User:
 
         User.user_list.append(self)
     
-    def tearDown(self):
-        User.user_list = []
+    
         
