@@ -1,4 +1,4 @@
-# import pyperclip #importing pyperclip for copying to clipboard
+import pyperclip #importing pyperclip for copying to clipboard
 
 class User:
     '''
