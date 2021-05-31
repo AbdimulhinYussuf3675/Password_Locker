@@ -117,7 +117,7 @@ def main():
 
                 while True:
                     print("--"*50)
-                    print('Our short codes: \n cc-Create your Credential \n sc-Show your Credentials \n fc- Find your Credential  \n da-delete a credential   \n ex-Exit')
+                    print('Our short codes: \n cc-Create your Credential \n shw-Show your Credentials \n fc- Find your Credential  \n da-delete a credential   \n ex-Exit')
                     print('\n')
                     short_code = input('Please Enter a choice: ').lower()
                     print("-"*10)
@@ -149,9 +149,12 @@ def main():
                                 break
                             elif choice == 'gp':
                                 password = generate_password()
+                                print('\n')
+                                password = input(f'your password is: {account_name}')
                                 break
                             elif choice == 'ex':
                                 break
+                                
                             else:
                                 print('Wrong option entered. Try again!')
 
@@ -224,9 +227,6 @@ def main():
             print("-"*20)
             print('\n')
             print('Wrong option entered. Try again!') 
-
-        main() 
-
 
 
 if __name__ == '__main__':
